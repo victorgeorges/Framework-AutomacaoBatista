@@ -1,12 +1,13 @@
 
 
 
-describe('Testando Site Automação com Batista', () => {
+describe('Testing Automação com Batista Alert Page', () => {
 
     it('Access site', () => {
 
         cy.visit('https://automacaocombatista.herokuapp.com/treinamento/home') //visit site url
         cy.url().should('eq', 'https://automacaocombatista.herokuapp.com/treinamento/home') //verify that url is correct
+        
     })
 
     it('Access alert page', () => {

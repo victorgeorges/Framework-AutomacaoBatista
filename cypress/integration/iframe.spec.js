@@ -1,7 +1,23 @@
 
+//variables
+const mudancaFoco = '.collapsible > li:nth-of-type(3) > .collapsible-header' //Mudança de Foco menu option css selector
+const iframeSelector = "[href='/mudancadefoco/iframe']" //Iframe menu option css selector
+ 
+const getIframeDocument = () => { //const to be able to work inside iframe
+    return cy
+    .get('#id_do_iframe')
+    .its('0.contentDocument').should('exist')
+  }
 
+const getIframeBody = () => { //const to be able to work inside iframe
+    return getIframeDocument()
+    .its('body').should('not.be.undefined')
+    .then(cy.wrap)
+  }
 
-describe('Testando Site Automação com Batista', () => {
+//end of variables
+
+describe('Testing Automação com Batista Iframe Page', () => {
 
     it('Access site', () => {
 
@@ -11,17 +27,17 @@ describe('Testando Site Automação com Batista', () => {
 
     it('Access iframe page', () => {
 
-        cy.get('.collapsible > li:nth-of-type(3) > .collapsible-header').click() //click on the "Mudança de Foco" option at the left menu
-        cy.get("[href='/mudancadefoco/iframe']").click() //click on the Alert option inside "Mudança de Foco" selection
+        cy.get(mudancaFoco).click() //click on the "Mudança de Foco" option at the left menu using const mudancaFoco
+        cy.get(iframeSelector).click() //click on the Iframe option inside "Mudança de Foco" selection using const iframeSelector
     
     })
 
-    it('Filling iframe form', () => {
-
-        cy.get('#first_name').type("José Silva")
-        
-    })
-
-    
-
+      it('fill the form', () => {
+        getIframeBody().find('#first_name').type("José") //fills iframe first name with "José"
+        getIframeBody().find('#last_name').type("Silveira") //fills iframe last name with "Silveira"
+        getIframeBody().find('#password').type("password123") //fills iframe password with "password123"
+        getIframeBody().find('#email').type("silveirinha@gmail.com") //fills iframe email with "silveirinha@gmail.com"
+        getIframeBody().find('.materialize-textarea').type("Testing Text") //fills iframe Text Area with "Testing Text"
+      })
+      
 })
