@@ -2,7 +2,7 @@
 
 context(`Contact Us`,()=>{ 
     beforeEach(()=>{ //before each iteration time, visit url
-        cy.visit(Cypress.env('url'))   
+        cy.accessSite()       // "access site" custom command
     })
 
     it(`List Users`,()=>{
@@ -16,6 +16,6 @@ context(`Contact Us`,()=>{
 
     it(`Verify Return Back`,()=>{
         cy.accessListSite()
-        cy.contains(`Voltar`).click().url(`https://automacaocombatista.herokuapp.com/treinamento/home`) //click on and verify url
+        cy.contains(`Voltar`).click().url(Cypress.env('url')) //click on and verify url
     })
 })

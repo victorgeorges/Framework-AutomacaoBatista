@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.3700" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-11T16:56:17" tests="0" file="cypress/integration/iframe.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Testing Automação com Batista Iframe Page" timestamp="2022-07-11T16:56:17" tests="3" time="5.3700" failures="0">
+    <testcase name="Testing Automação com Batista Iframe Page Access site" time="1.8980" classname="Access site">
+    </testcase>
+    <testcase name="Testing Automação com Batista Iframe Page Access iframe page" time="1.8220" classname="Access iframe page">
+    </testcase>
+    <testcase name="Testing Automação com Batista Iframe Page fill the form" time="1.6500" classname="fill the form">
+    </testcase>
+  </testsuite>
+</testsuites>
