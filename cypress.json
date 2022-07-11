@@ -3,7 +3,7 @@
     "viewportHeight": 720,
     "chromeWebSecurity": false,
     "env": {
-    "url": "https://preview.keenthemes.com/metronic8/demo1/index.html"
+    "url": "https://automacaocombatista.herokuapp.com/treinamento/home"
 },
    "reporter": "junit",
    "reporterOptions": {
