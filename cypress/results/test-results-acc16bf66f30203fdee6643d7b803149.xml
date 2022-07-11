@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.1500" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-11T17:28:08" tests="0" file="cypress/integration/alert.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Testing Automação com Batista Alert Page" timestamp="2022-07-11T17:28:08" tests="3" time="4.1500" failures="0">
+    <testcase name="Testing Automação com Batista Alert Page Access site" time="1.9150" classname="Access site">
+    </testcase>
+    <testcase name="Testing Automação com Batista Alert Page Access alert page" time="2.0800" classname="Access alert page">
+    </testcase>
+    <testcase name="Testing Automação com Batista Alert Page should trigger an alert with a message" time="0.1550" classname="should trigger an alert with a message">
+    </testcase>
+  </testsuite>
+</testsuites>

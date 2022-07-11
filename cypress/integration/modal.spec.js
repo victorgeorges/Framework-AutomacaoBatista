@@ -1,10 +1,4 @@
-describe('modal interaction', () => { //describe function
-    it('successfully opens modal', () => { //callback function
-        cy.visit('https://automacaocombatista.herokuapp.com/mudancadefoco/modal') //visiting page
-        cy.get('.waves-light').click() //clicks in modal button
-        cy.get('.modal-content').should('be.visible') //verify modal content is visible
-    })
-})
+
 //variables
 const mudancaFoco = '.collapsible > li:nth-of-type(3) > .collapsible-header' //Mudança de Foco menu option css selector
 const modalSelector = ".collapsible [href='/mudancadefoco/modal']" //Modal menu option css selector
@@ -14,17 +8,17 @@ const modalText = 'Pensando mais a longo prazo, a execução dos pontos do progr
 describe('Testing Automação com Batista Modal Page', () => {
 
     it('Access site', () => {
-        cy.visit('https://automacaocombatista.herokuapp.com/treinamento/home') //visit site url
-        cy.url().should('eq', 'https://automacaocombatista.herokuapp.com/treinamento/home') //verify that url is correct
+        cy.accessSite()       // "access site" custom command
+        cy.url().should('eq', Cypress.env('url')) //verify that url is correct
     })
     it('Access modal page', () => {
-        cy.get(mudancaFoco).click() //click on the "Mudança de Foco" option at the left menu using const mudancaFoco
-        cy.get(modalSelector).click() //click on the Modal option inside "Mudança de Foco" selection using const modalSelector
+        cy.get(mudancaFoco).click({force: true}) //click on the "Mudança de Foco" option at the left menu using const mudancaFoco
+        cy.get(modalSelector).click({force: true}) //click on the Modal option inside "Mudança de Foco" selection using const modalSelector
     })
     it('Testing Modal', () => {
-        cy.get('.waves-light').click() //Clicking "Abrir" button to open modal
+        cy.get('.waves-light').click({force: true}) //Clicking "Abrir" button to open modal
         cy.get('p').should('have.text', modalText) //Getting <p> from modal and comparing the text with modalText const
-        cy.get('.modal-close').click() //Clicking "Fechar" modal button to close the modal window
+        cy.get('.modal-close').click({force: true}) //Clicking "Fechar" modal button to close the modal window
         cy.get('.s9 .col > div:nth-of-type(2)').should('not.be.visible') //Checking if the modal window closed/is not visible
     })
 })
