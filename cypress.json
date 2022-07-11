@@ -3,7 +3,7 @@
     "viewportHeight": 720,
     "chromeWebSecurity": false,
     "env": {
-    "url": "https://automacaocombatista.herokuapp.com/"
+    "url": "https://automacaocombatista.herokuapp.com/treinamento/home"
 },
    "reporter": "junit",
    "reporterOptions": {
