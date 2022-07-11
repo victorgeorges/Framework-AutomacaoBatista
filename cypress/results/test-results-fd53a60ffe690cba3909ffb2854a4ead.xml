@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.7590" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-11T14:09:18" tests="0" file="cypress/integration/modal.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Testing Automação com Batista Modal Page" timestamp="2022-07-11T14:09:18" tests="3" time="2.7590" failures="0">
+    <testcase name="Testing Automação com Batista Modal Page Access site" time="1.8950" classname="Access site">
+    </testcase>
+    <testcase name="Testing Automação com Batista Modal Page Access modal page" time="0.5850" classname="Access modal page">
+    </testcase>
+    <testcase name="Testing Automação com Batista Modal Page Testing Modal" time="0.2790" classname="Testing Modal">
+    </testcase>
+  </testsuite>
+</testsuites>
