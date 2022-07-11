@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="6.6480" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-07-11T17:23:54" tests="0" file="cypress/integration/uploadFile.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Uplaod File" timestamp="2022-07-11T17:23:54" tests="1" time="6.6480" failures="0">
-    <testcase name="Uplaod File Upload" time="6.6480" classname="Upload">
-    </testcase>
-  </testsuite>
-</testsuites>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.7340" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-07-11T16:10:07" tests="0" file="cypress/integration/dragAndDrop.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="drag and drop interaction" timestamp="2022-07-11T16:10:07" tests="1" time="2.7340" failures="0">
-    <testcase name="drag and drop interaction successfully perform drag and drop" time="2.7340" classname="successfully perform drag and drop">
-    </testcase>
-  </testsuite>
-</testsuites>

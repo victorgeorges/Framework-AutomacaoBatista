@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.1930" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-07-11T13:48:03" tests="0" file="cypress/integration/modal.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="modal interaction" timestamp="2022-07-11T13:48:03" tests="1" time="2.1930" failures="0">
-    <testcase name="modal interaction successfully opens modal" time="2.1930" classname="successfully opens modal">
-    </testcase>
-  </testsuite>
-</testsuites>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.0070" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-07-11T16:10:42" tests="0" file="cypress/integration/mouseHover.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="mouse hover interaction" timestamp="2022-07-11T16:10:42" tests="1" time="2.0070" failures="0">
-    <testcase name="mouse hover interaction successfully perform mouse hover interaction" time="2.0070" classname="successfully perform mouse hover interaction">
-    </testcase>
-  </testsuite>
-</testsuites>
