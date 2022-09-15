@@ -1,5 +1,5 @@
 {
-  "name": "Framework Cypress Valtech",
+  "name": "framework_cypress_valtech",
   "version": "1.0.0",
   "description": "Framework development in Cypress-JS for web/mobile test automation",
   "main": "index.js",
