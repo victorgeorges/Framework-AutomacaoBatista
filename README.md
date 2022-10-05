@@ -7,8 +7,6 @@
 
 <h3 align="center">To install drag and drop plugin </h3>
 <h5 align="center">npm install --save-dev @4tw/cypress-drag-drop </h5>
-
-
 </br>
 
 <h3 align="center">to install Cypress </h3>
